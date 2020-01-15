@@ -1,0 +1,165 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+header {
+  background-image: url("./../../assets/Images/hero-01.jpg");
+  height: 600px;
+  width: 100%;
+  position: relative;
+  * {
+    color: white;
+  }
+  .setBottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .mouseBottom {
+    position: absolute;
+    bottom: 40px;
+    right: calc(50% - 45px);
+    text-align: center;
+    h4 {
+      margin: 0;
+    }
+  }
+  .header_center {
+    text-align: center;
+    button {
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 2px;
+      cursor: pointer;
+      padding: 8px 20px;
+    }
+    max-width: 600px;
+    margin: 0 auto;
+    vertical-align: center;
+    padding-top: 120px;
+  }
+  h5 {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  #hexagon {
+    width: 100px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    img {
+      width: 35px;
+    }
+    p {
+      color: black;
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+  #hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid white;
+  }
+  #hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid white;
+  }
+}
+
+.menu {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 50px;
+    margin-left: 20px;
+  }
+  span {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    li {
+      display: inline;
+      vertical-align: center;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.cities {
+  display: flex;
+  justify-content: space-around;
+  .city {
+    text-align: center;
+    padding: 10px 50px;
+    img {
+      width: 80px;
+    }
+  }
+}
+.topLine {
+  padding: 20px 0;
+  h3 {
+    color: #599ac8;
+    position: relative;
+    text-align: center;
+    &:after {
+      content: "";
+      width: 30px;
+      color: #599ac8;
+      height: 0;
+      border: 2px solid #599ac8;
+      position: absolute;
+      bottom: -10px;
+      left: calc(50% - 15px);
+    }
+  }
+}
+
+table {
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  th {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+  }
+  td {
+    text-align: center;
+    border: 1px solid #cccccc;
+  }
+}
